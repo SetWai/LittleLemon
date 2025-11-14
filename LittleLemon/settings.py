@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'restaurant',
     'rest_framework.authtoken',
+    'djoser',
 ]
 
 MIDDLEWARE = [
@@ -141,3 +142,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
+
+#add the following line
+DJOSER={"USER_ID_FIELD":"username"}
